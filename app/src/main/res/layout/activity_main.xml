@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prepare_title"
+        android:textColor="@color/ink"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/muted"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/prepare_subtitle"
+        android:textColor="@color/muted"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:id="@+id/preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:background="@color/ink">
+
+        <com.satellite.wallpaper.CropPreviewView
+            android:id="@+id/crop_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/lock_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="@string/lock_static"
+        android:textColor="@color/ink" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/change_view"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/change_view"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/grant_overlay"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grant_overlay"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/grant_battery"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grant_battery"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/attempt_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/muted"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/set_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/accent"
+        android:enabled="false"
+        android:text="@string/set_wallpaper"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</LinearLayout>

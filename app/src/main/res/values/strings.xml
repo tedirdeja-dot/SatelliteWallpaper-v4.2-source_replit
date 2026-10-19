@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Satélite Zoom Earth</string>
+    <string name="prepare_subtitle">Arrastra la imagen y usa dos dedos para ajustar el zoom. Se conservará este encuadre.</string>
+    <string name="prepare_title">Encuadra tu fondo</string>
+    <string name="set_wallpaper">Usar como fondo</string>
+    <string name="wallpaper_description">Imagen satelital de Zoom Earth actualizada al desbloquear el teléfono</string>
+    <string name="wallpaper_name">Satélite Zoom Earth</string>
+    <string name="pick_title">Mueve y haz zoom hasta la zona que quieres como fondo (satélite, radar…). Luego pulsa Guardar.</string>
+    <string name="pick_save">Guardar esta vista</string>
+    <string name="pick_invalid">No se pudo leer la vista actual. Espera a que cargue el mapa.</string>
+    <string name="change_view">Elegir otra vista de Zoom Earth</string>
+    <string name="grant_overlay">Permitir descarga en segundo plano (recomendado)</string>
+    <string name="lock_static">Actualizar también la pantalla de bloqueo</string>
+    <string name="grant_battery">Sin restricciones de batería (recomendado)</string>
+    <string name="interval_title">Frecuencia mínima de actualización</string>
+    <string name="interval_message">La imagen solo se intentará actualizar al desbloquear el teléfono y cuando haya pasado el intervalo elegido.</string>
+    <string name="interval_option">%1$d minutos</string>
+    <string name="interval_save">Guardar</string>
+    <string name="interval_keep">Mantener selección</string>
+    <string name="waiting_for_unlock">La imagen se descargará al próximo desbloqueo si han pasado al menos %1$d minutos. No se descarga mientras usas la app.</string>
+    <string name="confirm_hint">Así se verá el fondo en tu teléfono.\n¿Aplicarlo?</string>
+    <string name="confirm_accept">Aceptar</string>
+    <string name="confirm_cancel">Cancelar</string>
+</resources>
